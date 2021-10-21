@@ -314,6 +314,110 @@ frontend
 
 
 
+Day-7
+*****
+
+create the Types
+
+*******************************************
+frontend
+       src
+          constants
+             ProductsConstant.js
+*******************************************
+
+    finally 3 types are ready
+
+    1) LIST_PRODUCTS
+
+    2) LIST_PRODUCTS_SUCCESS
+
+    3) LIST_PRODUCTS_FAIL
+
+
+create the actions
+
+*********************************************
+frontend
+      src
+        actions
+           ProductsActions.js
+********************************************
+
+    - finally "ProductsActions" is ready
+
+
+create the reducer
+
+*******************************************
+frontend
+       src
+          reducer
+              ProductsReducer.js
+******************************************
+
+    - finally "ProductsReducer" is Ready
+
+
+create the "store", 
+           deploy the "reducer", 
+           apply the "thunk" middleware 
+           and make the "store" availability to "Home" Component
+
+
+index.js
+
+
+
+create the Home Component
+
+
+******************************************
+frontend
+       src
+         screens
+            HomeScreen.js
+******************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
