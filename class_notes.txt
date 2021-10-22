@@ -380,6 +380,38 @@ frontend
 ******************************************
 
 
+Day-8
+*****
+
+=> display the "spinner"
+
+        - font-awasome / bootstrap / jquery / material-ui
+
+
+=> display the error popup
+
+=> design the frontend
+
+        CSS3 Flex Box / CSS3 Grid Box 
+
+
+=> deployment
+
+    heroku
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
