@@ -401,6 +401,57 @@ Day-8
 
 
 
+Day-9
+*****
+
+create the spinner
+
+****************************************
+frontend
+       src   
+         components
+              LoadingBox.js
+****************************************
+
+
+create the MessageBox
+
+****************************************
+frontend
+       src
+         components
+             MessageBox.js      props --- variant  && children
+***************************************
+
+
+create the Rating
+
+******************************************
+frontend
+       src
+         components
+              Rating.js
+*****************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         
+
+
+
+
+
 
 
 
