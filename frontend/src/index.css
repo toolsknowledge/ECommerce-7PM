@@ -46,8 +46,47 @@ code {
   color: #404040;
 }
 
+.container{
+  height: 100vh;
+}
+
+.app-header{
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #203040;
+  align-items: center;
+  gap: 15px;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+}
 
 
+a:hover{
+  color: #f0c040;
+}
+
+
+.main{
+  height: 80%;
+}
+
+.brand{
+  font-size: 4vw;
+}
+
+.footer{
+  height: 10%;
+  background-color: #203040;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 
