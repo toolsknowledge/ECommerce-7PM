@@ -33,24 +33,8 @@ function HomeScreen(){
     return(
         <React.Fragment>
            {!loading?(<LoadingBox></LoadingBox>):error==="Network Error"?(<MessageBox variant="danger">{error}</MessageBox>):(
-               <div className="container">
-                   <header className="app-header">
-                       <div>
-                           <a href="#" className="brand">AshokIT</a>
-                       </div>
-
-                       <div>
-                           <a href="#">cart</a>
-                           <a href="#">signin</a>
-                       </div>
-                   </header>
-                   <main className="main">
-                      <Products products={products}></Products>
-                   </main>
-                   <footer className="footer">
-                       copyright@ashokit.in
-                   </footer>
-               </div>
+                <Products products={products}></Products>
+               
            )}
         </React.Fragment>
     )
