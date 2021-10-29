@@ -1,14 +1,3 @@
-/*  
-  1) grid-container
-
-  2) row
-
-  3) brand
-
-  4) center
-*/
-
-
 import './App.css';
 import React from 'react';
 import HomeScreen from './screens/HomeScreen';
@@ -24,10 +13,12 @@ function App() {
                 <div>
                   <NavLink to="/" className="brand" exact={true} strict><a>AshokIT</a></NavLink>
                 </div>
+
                 <div>
                     <NavLink to="/cart" exact={true} strict><i className="fa fa-shopping-cart"></i></NavLink>
                     <NavLink to="/signin" exact={true} strict><i className="fa fa-user-circle"></i></NavLink>
                 </div>
+                
               </header>
 
               <main>
