@@ -30,6 +30,18 @@ app.get("/api/products",async (req,res)=>{
 });
 
 
+
+app.get("/api/products/:_id",async (req,res)=>{
+    
+        console.log(await Product.findOne(mongoose.Types.ObjectId(req.params._id)));
+});
+
+
+
+
+
+
+
 app.listen(8080,()=>{
     console.log("server listening the port number 8080");
 });

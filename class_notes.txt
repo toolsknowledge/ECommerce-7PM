@@ -462,6 +462,48 @@ implement the spa
 
 
 
+Module2 Implementation
+**********************
+Day-13
+******
+implement the backend
+
+server.js
+
+start the node server
+
+> node server
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -469,68 +511,6 @@ implement the spa
 
 
          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
