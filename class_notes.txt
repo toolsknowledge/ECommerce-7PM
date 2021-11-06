@@ -466,15 +466,17 @@ Module2 Implementation
 **********************
 Day-13
 ******
-implement the backend
 
-server.js
+=> create the rest api
 
-start the node server
+    server.js
 
-> node server
+=> test the rest api by using Postman
+
+        => http://localhost:8080/api/products/id
 
 
+> yarn add mongoose@5.12.13
 
 
 
