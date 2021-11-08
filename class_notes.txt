@@ -479,40 +479,34 @@ Day-13
 > yarn add mongoose@5.12.13
 
 
+Day-14
+******
+
+Test the rest api calls by using Postman
+
+=> http://localhost:8080/api/products
+
+=> http://localhost:8080/api/products/{id}
 
 
+implement the redux architecture
+********************************
 
+*********************************************
+frontend
+       src
+         constants
+             DetailsConstant.js
+                finally "DETAILS_LOADING" , "DETAILS_LOADING_SUCCESS" and "DETATILS_LOADING_FAIL" constants are ready
+         actions
+            DetailsAction.js
+                finally "DetailsActions" is ready
+         reducer
+            DetailsReducer.js
+                finally "DetailsReducer" is ready
+         index.js
+                finally we have "details" is the key surrounder with reducer
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-         
-
-
-
+         screens
+            DetailsScreen.js
+***********************************************
