@@ -3,6 +3,7 @@ import React from 'react';
 import HomeScreen from './screens/HomeScreen';
 
 import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
+import DetailsScreen from './screens/DetailsScreen';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
 
               <main>
                   <Route path="/" component={HomeScreen} exact={true} strict></Route>
+                  <Route path="/details/:id" component={DetailsScreen} exact={true} strict></Route>
               </main>
 
               <footer className="row center">
