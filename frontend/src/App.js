@@ -12,7 +12,7 @@ function App() {
           <div className="grid-container">
               <header className="row">
                 <div>
-                  <NavLink to="/" className="brand" exact={true} strict><a>AshokIT</a></NavLink>
+                  <NavLink to="/" className="brand" exact={true} strict>AshokIT</NavLink>
                 </div>
 
                 <div>
