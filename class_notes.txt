@@ -510,3 +510,133 @@ frontend
          screens
             DetailsScreen.js
 ***********************************************
+
+
+Forms
+*****
+    - in reactjs, we can implement forms eazily with the help of 3rd party libraries.
+
+    1) formik
+
+    2) yup
+
+
+create the react applications
+*****************************
+
+> npx create-react-app forms-ex
+
+
+switch to the react application
+*******************************
+
+> cd forms-ex
+
+
+download the libraries
+**********************
+
+> yarn add formik yup bootstrap
+
+
+
+include bootstrap framework
+***************************
+index.js
+
+
+create the reusable component
+*****************************
+
+forms-ex
+       src  
+         components
+             TextField.js
+
+
+finally we are able to component reusable component called as 
+
+"TextField"
+
+
+
+use the TextField component
+***************************
+Signup.js
+
+
+Design the Final Form Component
+*******************************
+
+Registration.js
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
