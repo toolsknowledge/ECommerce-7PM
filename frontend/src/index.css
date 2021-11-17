@@ -125,6 +125,7 @@ a:hover{
 }
 
 .col-1{
+  align-items: flex-end;
   flex: 1 1 25rem;
 }
 
@@ -144,7 +145,16 @@ li{
 }
 
 
+.success{
+  color: #008000;
+  font-weight: bold;
+}
 
+.danger{
+  color: #880000;
+  font-weight: bold;
+  font-family: Comic Sans MS;
+}
 
 
 

@@ -1,7 +1,7 @@
 //receive the id from HomeScreen
 //send the id to the DetailsAction
 
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch,useSelector } from "react-redux";
 import DetailsActions from "../actions/DetailsActions";
 import LoadingBox from "../components/LoadingBox";
@@ -11,6 +11,7 @@ import Rating from "../components/Rating";
 
 
 function DetailsScreen(props){
+    const [qty,setQty] = useState(1);
     const id = props.match.params.id;
     const result = useSelector(state=>state.details);
     const {loading,product,error} = result;
@@ -43,7 +44,52 @@ function DetailsScreen(props){
                         </ul>
                     </div>  
                     <div className="col-1">
-                        
+                        <div className="card card-body">
+                            <ul>
+                                <li>
+                                    <div className="row">
+                                        <div>Name</div>
+                                        <div>{product.name}</div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div className="row">
+                                        <div>Price</div>
+                                        <div className="price">$ {product.cost}</div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div className="row">
+                                        <div>Status</div>
+                                        <div>{product.countInStock>0?(<div className="success">In Stock</div>):(<div className="danger">Out Of Stock</div>)}</div>
+                                    </div>
+                                </li>
+                                {product.countInStock>0 && (<>
+                                    <li>
+                                        <div className="row">
+                                            <div>Qty</div>
+                                            <select value={qty}
+                                                    onChange={(e)=>{ setQty(e.target.value) }}>
+                                                {[...Array(product.countInStock).keys()].map(
+                                                        (x) => (
+                                                    <option key={x + 1} value={x + 1}>
+                                                        {x + 1}
+                                                     </option>
+                                                )
+                                            )}
+
+                                            </select>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <button>Add To Cart</button>
+                                    </li>
+                                </>)}
+                            </ul>
+                        </div>
                     </div>
                  </div>
                 {/* <h1>{JSON.stringify(product)}</h1> */}
