@@ -19,6 +19,12 @@ function DetailsScreen(props){
     useEffect(()=>{
         dispatch(DetailsActions(id))
     },[]);
+
+    const addToCartHandler = ()=>{
+       props.history.push(`/cart/${id}?qty=${qty}`);
+    }
+
+
     return(
         <React.Fragment>
             {!loading?<LoadingBox></LoadingBox>:error=="Network Error"?<MessageBox variant="danger">{error}</MessageBox>:(<div>
@@ -73,7 +79,7 @@ function DetailsScreen(props){
                                             <select value={qty}
                                                     onChange={(e)=>{ setQty(e.target.value) }}>
                                                 {[...Array(product.countInStock).keys()].map(
-                                                        (x) => (
+                                                      (x) => (
                                                     <option key={x + 1} value={x + 1}>
                                                         {x + 1}
                                                      </option>
@@ -85,7 +91,7 @@ function DetailsScreen(props){
                                     </li>
 
                                     <li>
-                                        <button>Add To Cart</button>
+                                        <button className="primary block" onClick={addToCartHandler}>Add To Cart</button>
                                     </li>
                                 </>)}
                             </ul>

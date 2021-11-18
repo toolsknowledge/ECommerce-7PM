@@ -573,6 +573,50 @@ Registration.js
 
 
 
+***************************************************
+1) CartScreen
+
+2) Registration 
+
+3) Login
+
+4) Payment
+
+5) Deployment
+***************************************************
+
+CartScreen
+**********
+
+1) Navigate From DetailScreen to CartScreen with _id & qty
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
