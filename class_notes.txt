@@ -587,8 +587,39 @@ Registration.js
 
 CartScreen
 **********
+1) Navigate From module2 to module3
 
-1) Navigate From DetailScreen to CartScreen with _id & qty
+    "DetailScreen" to "CartScreen" while moving we need to carry "id" and "qty"
+
+    finally CartScreen contain "id" and "qty"
+
+
+2) implement the state management
+
+    => constants
+        finally "ADD_ITEM" constant is ready
+
+    => actions
+        finally "addToCart" action is ready
+    => reducer
+        finally "CartReducer" is ready
+
+    => store
+
+    => dispatch & subscription in CartScreen component
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

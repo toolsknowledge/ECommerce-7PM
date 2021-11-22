@@ -98,7 +98,7 @@ function DetailsScreen(props){
                         </div>
                     </div>
                  </div>
-                {/* <h1>{JSON.stringify(product)}</h1> */}
+               
             </div>)}
         </React.Fragment>
     )
