@@ -610,9 +610,20 @@ CartScreen
 
 
 
+3) implement the cart item remove functionality
 
+    => constants
+        finally "REMOVE_ITEM" constant is ready
 
+    => actions
+        finally "removeItemCart" action is ready
 
+    => reducer
+        
+
+    => store
+
+    => dispatch & subscription in CartScreen Component
 
 
 

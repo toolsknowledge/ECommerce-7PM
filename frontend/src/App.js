@@ -6,7 +6,20 @@ import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
 import DetailsScreen from './screens/DetailsScreen';
 import CartScreen from './screens/CartScreen';
 
+import { useSelector, useDispatch } from "react-redux";
+
+
 function App() {
+
+  const result = useSelector(state=>state.cart);
+  const cartItems = result.cartItems;
+  console.log(cartItems.length);
+
+
+  const dispatch = useDispatch();
+
+
+
   return (
     <React.Fragment>
         <Router>
@@ -17,7 +30,12 @@ function App() {
                 </div>
 
                 <div>
-                    <NavLink to="/cart" exact={true} strict><i className="fa fa-shopping-cart"></i></NavLink>
+                    <NavLink to="/cart" exact={true} strict><i className="fa fa-shopping-cart"></i>
+                    {cartItems.length > 0 && (
+                      <span className="badge">{cartItems.length}</span>
+                    )}
+
+                    </NavLink>
                     <NavLink to="/signin" exact={true} strict><i className="fa fa-user-circle"></i></NavLink>
                 </div>
                 
