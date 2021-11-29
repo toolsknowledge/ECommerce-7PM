@@ -627,94 +627,77 @@ CartScreen
 
 
 
+Registration
+************
 
+***************************************************
+constants
+        RegisterConstants.js
 
+actions
+        RegisterActions.js
 
+reducer
+        RegisterReducer.js
 
+screens
+        RegisterScreen.js
 
+App.js
+**************************************************
 
+RegisterScreen
+++++++++++++++
 
+=> first name
 
+=> last name
 
+=> email
 
+=> mobile number
 
+=> gender   (radio buttons)
 
+=> languages  (check boxes)
 
+=> country     (dropdown)
 
+=> date of birth   (date-picker)
 
+=> time            (time-picker)
 
+=> salary           (range field)
 
+=> address    
 
+=> image upload
 
+=> capcha
 
 
+formik & yup library
 
+multi-step form
 
+context-api
 
+image upload to "aws server" through "nodejs"
 
+generate the tokens to maintain "token based Authentication System"
 
+"jwt-simple" module
 
+download following libraries
 
+> formik
 
+> yup
 
 
+> yarn add formik yup
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    these libraries are used to implement the forms in eazy manner
 
 
 

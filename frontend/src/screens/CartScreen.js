@@ -20,7 +20,7 @@ export default function CartScreen(props){
     }
 
     const checkoutHandler = ()=>{
-        console.log("payment")
+        props.history.push("/register");
     }
 
     return(

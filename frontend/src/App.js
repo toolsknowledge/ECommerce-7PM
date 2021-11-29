@@ -7,6 +7,7 @@ import DetailsScreen from './screens/DetailsScreen';
 import CartScreen from './screens/CartScreen';
 
 import { useSelector, useDispatch } from "react-redux";
+import RegisterScreen from './screens/RegisterScreen';
 
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
                   <Route path="/" component={HomeScreen} exact={true} strict></Route>
                   <Route path="/details/:id" component={DetailsScreen} exact={true} strict></Route>
                   <Route path="/cart/:id?" component={CartScreen} exact={true} strict></Route>
+                  <Route path="/register" component={RegisterScreen} exact={true} strict></Route>
               </main>
 
               <footer className="row center">
