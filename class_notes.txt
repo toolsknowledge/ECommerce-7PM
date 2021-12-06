@@ -702,6 +702,44 @@ download following libraries
 
 
 
+hosting of backend application
+******************************
+
+=> push backend code to GitHub Repository
+        Final-ECommerce-7PM
+
+=> create the application in AWS
+        ECommerce-7PM
+
+=> implement the CI/CD Process
+
+
+=> collect the end points from Elastic Bean Stalk
+
+    Ecommerce7pm-env.eba-hsf8dhev.ap-south-1.elasticbeanstalk.com/api/products
+
+    Ecommerce7pm-env.eba-hsf8dhev.ap-south-1.elasticbeanstalk.com/api/products/{id}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
