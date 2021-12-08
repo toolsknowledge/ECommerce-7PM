@@ -10,7 +10,7 @@ const DetailsActions = (id)=>{
             error:""
         })
         try{
-            const {data} = await axios.get(`http://localhost:8080/api/products/${id}`);
+            const {data} = await axios.get(`http://ecommerce7pm-env.eba-hsf8dhev.ap-south-1.elasticbeanstalk.com/api/products/${id}`);
             dispatch({
                 type:DETAILS_LOADING_SUCCESS,
                 loading:true,

@@ -721,6 +721,97 @@ hosting of backend application
     Ecommerce7pm-env.eba-hsf8dhev.ap-south-1.elasticbeanstalk.com/api/products/{id}
 
 
+hosting of frontend application
+*******************************
+
+=> configure the above rest api calls in frontend application
+
+=> download and install aws cli tool
+
+    aws cli tool, used to upload react application to aws cloud
+
+    website : https://aws.amazon.com/cli/
+
+    file    : AWSCLIV2.msi
+
+=> prepare the production build
+
+        > npm run build
+
+=> create the s3 bucket in aws account
+
+=> complete the aws configuration
+
+        => properties
+
+                static website hosting
+
+        => permissions
+
+                bucket policies
+
+=> create tokens (Authentication and Authorization)
+
+    IAM
+
+=> edit the package.json file
+
+    "deploy": "aws s3 cp --recursive ./build s3://final-ecommerce-7pm"
+
+
+=> execute the following commands
+
+    > aws configure
+
+    > npm run build
+
+    > npm run deploy
+
+
+=> get the cloud url from aws
+
+    http://final-ecommerce-7pm.s3-website.ap-south-1.amazonaws.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -11,7 +11,7 @@ export const ProductsActions = ()=>{
             error:""
         });
         try{
-            const {data} = await axios.get(`http://localhost:8080/api/products`);
+            const {data} = await axios.get(`http://ecommerce7pm-env.eba-hsf8dhev.ap-south-1.elasticbeanstalk.com/api/products`);
             dispatch({
                 type:LIST_PRODUCTS_SUCCESS,
                 error:"",
