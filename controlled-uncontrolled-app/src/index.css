@@ -1,0 +1,8 @@
+body{
+  margin: 20px auto;
+}
+
+label,
+input{
+  margin-right: 5px;
+}
