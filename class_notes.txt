@@ -774,7 +774,8 @@ hosting of frontend application
 
 
 
-
+Registration Module
+********************
 
 
 
