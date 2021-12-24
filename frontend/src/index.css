@@ -230,11 +230,14 @@ input[type="email"]{
     border: 1px solid #ccc;
     border-radius: 4px;
 }
-input[type="submit"]{
-  margin-top: 10px;
+
+.form-control{
+    margin-bottom: 20px;
 }
 
-
+.error{
+  color: red;
+}
 
 
 
