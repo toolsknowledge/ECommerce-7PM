@@ -2,7 +2,18 @@ import React from "react";
 import { ErrorMessage,Formik,Field, Form } from "formik";
 import * as Yup from "yup";
 function RegisterScreen(){
-    const initialValues = {fname:"",lname:"",email:""};
+    const initialValues = {
+            phNumbers:['',''],
+            fname:"",
+            lname:"",
+            email:"",
+            address:"",
+            social:{
+                facebook:"",
+                twitter:""
+            }
+    };
+    
     const onSubmit = values=>{
         console.log(values);
     }
@@ -10,7 +21,11 @@ function RegisterScreen(){
         fname:Yup.string().required("fname required !"),
         lname:Yup.string().required("lname required !"),
         email : Yup.string().email("invalid email format").required("email is required"),
-        address:Yup.string().max(25,"should be 25 characters").required("Address is Required")
+        address:Yup.string().max(25,"should be 25 characters").required("Address is Required"),
+        social:Yup.object({
+            facebook:Yup.string().required("Can't Left Blank !"),
+            twitter:Yup.string().required("can't left blank").min(6,"minimum 6 characters are required").max(10,"maximum 10 characters are allowed")
+        })
     })
     return(
         <React.Fragment>
@@ -51,6 +66,28 @@ function RegisterScreen(){
                                name="address"
                                id="address"></Field>
                         <ErrorMessage name="address"></ErrorMessage>
+                    </div>
+
+                    <div className="form-control">
+                        <label htmlFor="facebook">Facebook</label>
+                        <Field name="social.facebook" id="facebook" type="text"></Field>
+                        <ErrorMessage name="social.facebook"></ErrorMessage>
+                    </div>
+
+                    <div className="form-control">
+                        <label htmlFor="Twitter">Twitter</label>
+                        <Field name="social.twitter" id="twitter" type="text"></Field>
+                        <ErrorMessage name="social.twitter"></ErrorMessage>
+                    </div>
+
+                    <div className="form-control">
+                        <label htmlFor="primary phone">Primary</label>
+                        <Field name="phNumbers[0]" id="primary" type="number"></Field>
+                    </div>
+
+                    <div className="form-control">
+                        <label htmlFor="secondary phone">Secondary</label>
+                        <Field name="phNumbers[1]" id="primary" type="number"></Field>
                     </div>
 
 
